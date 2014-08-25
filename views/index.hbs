@@ -1,0 +1,39 @@
+{{!< layout}}
+<section>
+<div class="img-src" style="background-image:url('img/original.jpg')"></div>
+<div class="img-src blurred-image" style="background-image:url('img/blurred.jpg')"></div>
+  <div class="container">
+<div class="row">
+	<div class="col-lg-2 col-lg-offset-1 image">
+		<img src="http://owenwillia.ms/assets/img/dp.png">
+	</div>
+	<div class="col-lg-8">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>Hi, I'm Owen Williams</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<p class="makeitrain">I work at <a href="http://hoistapps.com">Hoist</a> and <a href="http://thenextweb.com/authors/owilliams">The Next Web</a> crafting words + code. I also run a <a href="http://owened.co.nz">tech blog</a> and a weekly tech newsletter called <a href="http://owenwillia.ms/newslettter">Charged</a>, which is the best way to get a roundup of tech trends each week. If you want down to the minute, follow me on <a href="http://twitter.com/ow">Twitter</a>.
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+<section class="articles">
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6">
+			<h2>Blog</h2>
+			{{#each article}}
+				<a href="{{link}}">{{title}}</a></br>
+			{{/each}}
+		</div>
+		<div class="col-lg-6">
+		
+		</div>
+	</div>
+</div>
+</section>

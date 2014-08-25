@@ -1,0 +1,82 @@
+body, html {
+  height: 100%; }
+
+section {
+  height: 100%;
+  width: 100%; }
+
+body {
+  font-family: "Harriet Display Medium";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  background: #f7f7f7;
+  color: white; }
+
+h1 {
+  font-family: "Harriet Display Medium";
+  font-style: italic;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  font-size: 4em; }
+
+.makeitrain {
+  font-size: 1.5em; }
+
+.center {
+  text-align: center; }
+
+a {
+  font-style: italic;
+  background-color: #F7EE0C;
+  color: black;
+  padding-left: 4px;
+  padding-right: 4px; }
+
+a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black; }
+
+.image img {
+  width: 100%;
+  border-radius: 99em; }
+
+.image {
+  margin-top: 40px; }
+
+.here {
+  background: pink; }
+
+.here::before {
+  background-color: red;
+  width: 150px;
+  height: 150px; }
+
+.container {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.img-src {
+  position: absolute;
+  background-position: center;
+  -webkit-background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  width: 100%;
+  height: 100%; }
+
+.img-src.blurred-image {
+  opacity: 0; }
+
+.articles h2 {
+  color: black; }
+.articles h3 {
+  color: black;
+  font-size: 1.2em; }
