@@ -1,8 +1,9 @@
 {{!< layout}}
-<section>
+<body>
+<section class="index">
 <div class="img-src" style="background-image:url('img/original.jpg')"></div>
 <div class="img-src blurred-image" style="background-image:url('img/blurred.jpg')"></div>
-  <div class="container">
+  <div class="container middle">
 <div class="row">
 	<div class="col-lg-2 col-lg-offset-1 image">
 		<img src="http://owenwillia.ms/assets/img/dp.png">
@@ -22,17 +23,33 @@
 </div>
 </div>
 </section>
-<section class="articles">
+<section class="articles index">
 <div class="container">
 	<div class="row">
 		<div class="col-lg-6">
+			<h1>Latest work</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-6 articles">
 			<h2>Blog</h2>
 			{{#each article}}
-				<a href="{{link}}">{{title}}</a></br>
+				<p><a href="{{link}}">{{title}}</a></p>
 			{{/each}}
 		</div>
 		<div class="col-lg-6">
-		
+			<h2>The Next Web</h2>
+			{{#each thenextweb}}
+				<p><a href="{{link}}">{{title}}</a></p>
+			{{/each}}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-6 ">
+			<h2>Charged</h2>
+				{{#each charged}}
+					<p><a href="{{link}}">{{title}}</a></p>
+				{{/each}}
 		</div>
 	</div>
 </div>
