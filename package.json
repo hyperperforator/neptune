@@ -9,7 +9,8 @@
     "static-favicon": "~1.0.1",
     "method-override": "~1.0.0",
     "errorhandler": "~1.0.0",
-    "express-hbs": "~0.7.9"
+    "express-hbs": "~0.7.9",
+    "feed-read": "*"
   },
   "devDependencies": {
     "feed-read": "0.0.1",
