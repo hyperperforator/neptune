@@ -10,7 +10,8 @@
     "method-override": "~1.0.0",
     "errorhandler": "~1.0.0",
     "express-hbs": "~0.7.9",
-    "feed-read": "*"
+    "feed-read": "*",
+    "nodemon" : "*",
   },
   "devDependencies": {
     "feed-read": "0.0.1",
