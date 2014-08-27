@@ -36,15 +36,14 @@ section {
 .index a {
   font-family: "Harriet Display Medium";
   font-style: normal;
-  background-color: #F7EE0C;
-  color: black;
+  border-bottom: 2px solid #F7EE0C;
+  color: white;
   padding-left: 4px;
   padding-right: 4px;
   text-decoration: none; }
 .index a:hover {
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: black; }
+  color: rgba(255, 255, 255, 0.8); }
 .index .image img {
   width: 100%;
   border-radius: 99em; }
@@ -79,12 +78,16 @@ section {
   height: auto;
   margin-bottom: 40px; }
   .index .articles a {
-    background-color: #F7EE0C;
-    font-style: normal; }
+    font-family: "Harriet Display Medium";
+    font-style: normal;
+    border-bottom: 2px solid #F7EE0C;
+    color: black;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-decoration: none; }
   .index .articles a:hover {
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: black; }
+    color: rgba(255, 255, 255, 0.8); }
   .index .articles h1, .index .articles h2 {
     color: black;
     font-style: italic; }

@@ -55,8 +55,8 @@ section {
 	a {
 		font-family: "Harriet Display Medium";
 		font-style: normal;
-		background-color: #F7EE0C;
-		color: black;
+		border-bottom: 2px solid #F7EE0C;
+		color: white;
 		padding-left: 4px;
 		padding-right: 4px;
 		text-decoration: none;
@@ -64,8 +64,7 @@ section {
 
 	a:hover {
 		text-decoration: none;
-		background-color: rgba(255,255,255,0.8);
-		color: black;
+		color: rgba(255,255,255,0.8);
 	}
 
 	.image img {
@@ -117,14 +116,18 @@ section {
 	  	margin-bottom: 40px;
 
 	  	a {
-	  		background-color: #F7EE0C;
-	  		font-style: normal;
-	  	}
-
-	  	a:hover {
-			text-decoration: none;
-			background-color: rgba(255,255,255,0.7);
+			font-family: "Harriet Display Medium";
+			font-style: normal;
+			border-bottom: 2px solid #F7EE0C;
 			color: black;
+			padding-left: 4px;
+			padding-right: 4px;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: none;
+			color: rgba(255,255,255,0.8);
 		}
 
 	  	h1, h2 {
