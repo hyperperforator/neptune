@@ -42,7 +42,8 @@ namespace :deploy do
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
       node_stop = "cd #{current_path} && forever stop 0;true;"
-      node_start = "cd #{current_path} && forever app.js;true"
+      execute node_stop
+      node_start = "cd #{current_path} && forever start app.js;true"
       execute node_start
       # Here we can do anything such as:
       # within release_path do
