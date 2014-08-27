@@ -25,7 +25,7 @@ indexRouter.route('/')
  			feed('http://us8.campaign-archive2.com/feed?u=7ba9643cb80dac69c6818848c&id=00010c34a8', function(err, articles3) {
   
 			 res.render('index', {
-			      title: 'owen',
+			      title: 'Hi, I'm Owen Williams!',
 			      article : articles,
 			      thenextweb : articles2,
 			      charged : articles3
@@ -38,35 +38,35 @@ indexRouter.route('/')
 indexRouter.route('/newsletter')
   .all(function (req, res) {
   	res.render('newsletter', {
-			      title: 'Newsletter'
+            title: 'Charged Newsletter'
 			    });
   });
 
   indexRouter.route('/newsletter/sponsor')
   .all(function (req, res) {
   	res.render('sponsor', {
-			      title: 'Newsletter'
+			      title: 'Charged Newsletter | Sponsor'
 			    });
   });
 
   indexRouter.route('/newsletter/love')
   .all(function (req, res) {
   	res.render('love', {
-			      title: 'Newsletter'
+			      title: 'Charged Newsletter | Love'
 			    });
   });
 
   indexRouter.route('/newsletter/about')
   .all(function (req, res) {
   	res.render('about', {
-			      title: 'Newsletter'
+			      title: 'Charged Newsletter | About'
 			    });
   });
 
     indexRouter.route('/newsletter/complete')
   .all(function (req, res) {
   	res.render('complete', {
-			      title: 'Newsletter'
+			      title: 'Charged Newsletter | All Signed Up'
 			    });
   });
 exports.indexRouter = indexRouter;
