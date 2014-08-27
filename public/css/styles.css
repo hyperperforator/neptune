@@ -22,7 +22,8 @@ section {
   font-size: 4em;
   color: white; }
 .index .makeitrain {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  line-height: 35px; }
 .index .center {
   text-align: center; }
 .index a {
