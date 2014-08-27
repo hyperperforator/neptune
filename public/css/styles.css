@@ -31,7 +31,8 @@ section {
   background-color: #F7EE0C;
   color: black;
   padding-left: 4px;
-  padding-right: 4px; }
+  padding-right: 4px;
+  text-decoration: none; }
 .index a:hover {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.8);
@@ -88,6 +89,18 @@ section {
   .index .image {
     text-align: center;
     width: auto; } }
+@media screen and (max-width: 480px) {
+  .index .image img {
+    width: 120px; }
+  .index .middle {
+    top: 0%;
+    -webkit-transform: translateY(-0%);
+    -ms-transform: translateY(-0%);
+    transform: translateY(-0%); }
+  .index h1 {
+    font-size: 1.5em; }
+  .index .makeitrain {
+    font-size: 1.1em; } }
 
 .page {
   background: url('./img/bg.png') repeat; }

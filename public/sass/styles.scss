@@ -45,7 +45,7 @@ section {
 		color: black;
 		padding-left: 4px;
 		padding-right: 4px;
-
+		text-decoration: none;
 	}
 
 	a:hover {
@@ -133,6 +133,28 @@ section {
 	  			width: auto;
 	  		}
 		}
+
+
+	@media screen and (max-width: 480px) {
+		.image img {
+		width: 120px;
+		}
+
+		.middle {
+				  top: 0%;
+	  -webkit-transform: translateY(-0%);
+	  -ms-transform: translateY(-0%);
+	  transform: translateY(-0%);
+		}
+
+		h1 {
+			font-size: 1.5em;
+		}
+
+		.makeitrain {
+			font-size: 1.1em;
+		}
+	}
 }
 	.page {
 	  background: url('./img/bg.png') repeat;
@@ -311,6 +333,7 @@ section {
 	transform: translateY(-0%);
 	    }
 	}
+
 }
 
 	@font-face {
