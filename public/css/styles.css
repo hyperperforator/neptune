@@ -35,7 +35,7 @@ section {
   text-align: center; }
 .index a {
   font-family: "Harriet Display Medium";
-  font-style: normal;
+  font-style: italic;
   border-bottom: 2px solid #F7EE0C;
   color: white;
   padding-left: 4px;
@@ -79,7 +79,7 @@ section {
   margin-bottom: 40px; }
   .index .articles a {
     font-family: "Harriet Display Medium";
-    font-style: normal;
+    font-style: italic;
     border-bottom: 2px solid #F7EE0C;
     color: black;
     padding-left: 4px;
@@ -87,7 +87,7 @@ section {
     text-decoration: none; }
   .index .articles a:hover {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.8); }
+    color: rgba(0, 0, 0, 0.8); }
   .index .articles h1, .index .articles h2 {
     color: black;
     font-style: italic; }
