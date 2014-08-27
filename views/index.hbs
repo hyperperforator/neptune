@@ -27,19 +27,19 @@
 <section class="articles index">
 <div class="container">
 	<div class="row">
-		<div class="col-lg-6">
-			<h1>Latest work</h1>
+		<div class="col-lg-6 col-lg-offset-3 articles center">
+			<h1>My work</h1>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-lg-6 articles">
-			<h2>Blog</h2>
+			<div class="logo"><img src="/img/owened.png"></div>
 			{{#each article}}
 				<p><a href="{{link}}">{{title}}</a></p>
 			{{/each}}
 		</div>
 		<div class="col-lg-6">
-			<img src="/img/tnw.png">
+			<div class="logo"><img src="/img/tnw.png"></div>
 			{{#each thenextweb}}
 				<p><a href="{{link}}">{{title}}</a></p>
 			{{/each}}
@@ -47,7 +47,7 @@
 	</div>
 	<div class="row">
 		<div class="col-lg-6 ">
-			<h2>Charged</h2>
+			<div class="logo"><img src="/img/charged.png"></div>
 				{{#each charged}}
 					<p><a href="{{link}}">{{title}}</a></p>
 				{{/each}}

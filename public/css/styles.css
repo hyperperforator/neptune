@@ -26,6 +26,13 @@ section {
   line-height: 35px; }
 .index .center {
   text-align: center; }
+.index .logo img {
+  height: 70px; }
+.index .logo {
+  padding-bottom: 20px;
+  text-align: center; }
+.index .center {
+  text-align: center; }
 .index a {
   font-family: "Harriet Display Medium";
   font-style: normal;
