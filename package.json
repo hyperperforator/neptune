@@ -11,7 +11,7 @@
     "errorhandler": "~1.0.0",
     "express-hbs": "~0.7.9",
     "feed-read": "*",
-    "nodemon" : "*",
+    "nodemon" : "*"
   },
   "devDependencies": {
     "feed-read": "0.0.1",
