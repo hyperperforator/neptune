@@ -56,6 +56,13 @@ indexRouter.route('/newsletter')
 			    });
   });
 
+    indexRouter.route('/applebingo')
+  .all(function (req, res) {
+    res.render('applebingo', {
+            title: 'Apple September Event Bingo'
+          });
+  });
+
   indexRouter.route('/newsletter/about')
   .all(function (req, res) {
   	res.render('about', {
@@ -69,6 +76,8 @@ indexRouter.route('/newsletter')
 			      title: 'Charged Newsletter | All Signed Up'
 			    });
   });
+
+
 exports.indexRouter = indexRouter;
   // Each article has the following properties:
   // 

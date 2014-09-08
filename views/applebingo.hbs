@@ -1,0 +1,155 @@
+{{!< layout}}
+<body>
+<section class="appleevent">
+<div id="main">
+	<div class="container">
+		<div class="row bump">
+			<div class="col-lg-6 col-lg-offset-3 title">
+				<h1>{{title}}</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="row">
+		  		<div class="col-lg-12 row1">
+		            <div class="col-lg-offset-1 col-lg-2 tb col1 diag1">Laser Focused <span class="changeNumber">0</span></div>
+		           	<div class="col-lg-2 tb col2">Double Down <span class="changeNumber">0</span></div>
+		            <div class="col-lg-2 tb col3">Magical <span class="changeNumber">0</span></div>
+		            <div class="col-lg-2 tb col4">iPhone 6 <span class="changeNumber">0</span></div>
+		             <div class="col-lg-2 tb col5 diag2">Resolution <span class="changeNumber">0</span></div>
+	            </div>
+	    	</div>
+	    	<div class="row">
+                <div class="col-lg-12 row2">
+                    <div class="col-lg-offset-1 col-lg-2 tb col1">Revolutionary <span class="changeNumber">0</span></div>
+                    <div class="col-lg-2 tb col2 diag1">Point of Sale <span class="changeNumber">0</span></div>
+                    <div class="col-lg-2 tb col3">Battery Life <span class="changeNumber">0</span></div>
+		            <div class="col-lg-2 tb col4 diag2">iWatch <span class="changeNumber">0</span></div>
+		            <div class="col-lg-2 tb col5">Sapphire <span class="changeNumber">0</span></div>
+                </div>
+			</div>
+				    	<div class="row">
+                <div class="col-lg-12 row3">
+                    <div class="col-lg-offset-1 col-lg-2 tb">One More Thing <span class="changeNumber">0</span></div>
+                    <div class="col-lg-2 tb col2">Incredible <span class="changeNumber">0</span></div>
+                    <div class="col-lg-2 tb col3 diag1 diag2">Only Apple Can <span class="changeNumber">0</span></div>
+                    <div class="col-lg-2 tb col4">Aluminum <span class="changeNumber">0</span></div>
+                    <div class="col-lg-2 tb col5">Beautiful <span class="changeNumber">0</span></div>
+                </div>
+			</div>
+	    	<div class="row">
+                <div class="col-lg-12 row4">
+                    <div class="col-lg-offset-1 col-lg-2 tb">Precision <span class="changeNumber">0</span></div>
+                    <div class="col-lg-2 tb col2 diag2">Game Changer <span class="changeNumber">0</span></div>
+                    <div class="col-lg-2 tb col3">Sleek <span class="changeNumber">0</span></div>
+                    <div class="col-lg-2 tb col4 diag1">Pokes fun at Android <span class="changeNumber">0</span></div>
+                    <div class="col-lg-2 tb col5">Best [name] ever made <span class="changeNumber">0</span></div>
+            	</div>
+            </div>
+                	<div class="row">
+                <div class="col-lg-12 row5">
+                    <div class="col-lg-offset-1 col-lg-2 tb col1 diag2">Gorgeous <span class="changeNumber">0</span></div>
+                    <div class="col-lg-2 tb col2">'My ass' <span class="changeNumber">0</span></div>
+                    <div class="col-lg-2 tb col3">Innovate <span class="changeNumber">0</span></div>
+                    <div class="col-lg-2 tb col4">Misleading graphs <span class="changeNumber">0</span></div>
+                    <div class="col-lg-2 tb col5 diag1">Innovate <span class="changeNumber">0</span></div>
+                </div>
+			</div>
+		  </div> 
+		</div>
+	</div>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">You got bingo!</h4>
+      </div>
+      <div class="modal-body">
+      	<div class="result">
+
+      	</div>
+      	<div class="social">
+      		Share your result! <span class="icon-twitter"></span>
+      	</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script type="text/javascript">
+	$( ".tb" ).click(function() {
+  		$(this).css( "background-color", "red");
+  		$(this).css( "color", "white");
+  		$(this).addClass("checked");
+  		var value = parseInt($(this).find( ".changeNumber" ).text(),10) + 1;
+  		$(this).find( ".changeNumber" ).text(value);
+  		checkBingo();
+	});
+	var bingos = {
+		row1: false,
+		row2: false,
+		row3: false,
+		row4: false,
+		row5: false,
+		col1: false,
+		col2: false,
+		col3: false,
+		col4: false,
+		col5: false,
+		diag1: false,
+		diag2: false
+	};
+	function checkBingo() {
+
+		if($(".tb").length === $(".tb.checked").length) {
+			//full bingo
+			alert("Full Bingo");
+			$('#myModal').modal({show:true});
+		}
+
+		for(var i = 1; i <= 5; i++) {
+			if(!bingos["row" + i]) {
+				if($(".row" + i + " .tb").length === $(".row" + i + " .tb.checked").length) {
+					$('.result').html("Row " + i + " bingo");
+					$('#myModal').modal({show:true});
+					bingos["row" + i] = true;
+				}
+			}
+		}
+
+		for(var i = 1; i <= 5; i++) {
+			if(!bingos["col" + i]) {
+				if($(".col" + i + ".tb").length === $(".col" + i + ".tb.checked").length) {
+					$('.result').html("Column " + i + " bingo");
+					$('#myModal').modal({show:true});
+					bingos["col" + i] = true;
+				}
+			}
+		}
+
+		for(var i = 1; i <= 2; i++) {
+			if(!bingos["diag" + i]) {
+				if($(".diag" + i + ".tb").length === $(".diag" + i + ".tb.checked").length) {
+					$('#myModal').modal({show:true});
+					$('.result').html("Diagonal" + i + " bingo");
+					bingos["diag" + i] = true;
+				}
+			}
+		}
+
+		//if($(".tb.row1").length === $(".tb.row1.checked").length) {
+			//full bingo
+		//}
+
+
+
+
+	}
+</script>
+</section>
+</body>
+

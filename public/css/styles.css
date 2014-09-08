@@ -232,3 +232,57 @@ section {
   src: url('./font/mandag-mandag-webfont.eot?#iefix') format('embedded-opentype'), url('./font/mandag-mandag-webfont.woff') format('woff'), url('./font/mandag-mandag-webfont.ttf') format('truetype'), url('./font/mandag-mandag-webfont.svg#mandagregular') format('svg');
   font-weight: normal;
   font-style: normal; }
+
+/*APPLE BINGO*/
+.appleevent body {
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased; }
+.appleevent .tb {
+  border: 1px solid black;
+  padding: 15px;
+  text-align: center; }
+.appleevent .tb:hover {
+  background: grey; }
+.appleevent #main {
+  background: #fff url("/img/invite.jpg") center top no-repeat;
+  background-size: auto 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 1140px;
+  z-index: 1; }
+.appleevent h1 {
+  font-weight: 200; }
+.appleevent .title {
+  text-align: center;
+  margin-bottom: 40px; }
+.appleevent .bump {
+  margin-top: 180px; }
+.appleevent .icon-twitter {
+  color: #4099FF;
+  font-size: 1.5em; }
+.appleevent .social {
+  color: #4099FF; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?-r8kae5');
+  src: url('fonts/icomoon.eot?#iefix-r8kae5') format('embedded-opentype'), url('fonts/icomoon.woff?-r8kae5') format('woff'), url('fonts/icomoon.ttf?-r8kae5') format('truetype'), url('fonts/icomoon.svg?-r8kae5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-twitter:before {
+  content: "\e600"; }
