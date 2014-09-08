@@ -264,6 +264,8 @@ section {
   font-size: 1.5em; }
 .appleevent .social {
   color: #4099FF; }
+.appleevent .col-md-2 {
+  font-size: 0.8em; }
 
 @font-face {
   font-family: 'icomoon';
