@@ -266,6 +266,9 @@ section {
   color: #4099FF; }
 .appleevent .col-md-2 {
   font-size: 0.8em; }
+.appleevent h2 {
+  font-weight: 300;
+  font-size: 1.2em; }
 
 @font-face {
   font-family: 'icomoon';
