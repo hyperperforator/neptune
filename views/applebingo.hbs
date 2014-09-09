@@ -139,9 +139,12 @@
 	function checkBingo() {
 
 		if($(".tb").length === $(".tb.checked").length) {
-			//full bingo
-			alert("Full Bingo");
-			$('#myModal').modal({show:true});
+			getText();
+					$('.result').html("I got Apple bingo: " + theResult);
+					var constructTweet = "https://twitter.com/intent/tweet?text=" + "Got #applebingo! " + theResult + "http://owenwillia.ms/applebingo";
+					$('#link').attr('href', constructTweet)
+					$('#myModal').modal({show:true});
+					$('.result').html("I got Apple bingo: " + theResult);
 		}
 
 		for(var i = 1; i <= 5; i++) {
@@ -149,7 +152,7 @@
 				if($(".row" + i + " .tb").length === $(".row" + i + " .tb.checked").length) {
 					getText();
 					$('.result').html("I got Apple bingo: " + theResult);
-					var constructTweet = "https://twitter.com/intent/tweet?text=" + "Apple Bingo! " + theResult + "http://owenwillia.ms/applebingo";
+					var constructTweet = "https://twitter.com/intent/tweet?text=" + "Got #applebingo! " + theResult + "http://owenwillia.ms/applebingo";
 					$('#link').attr('href', constructTweet)
 					$('#myModal').modal({show:true});
 					$('.result').html("I got Apple bingo: " + theResult);
@@ -162,7 +165,7 @@
 			if(!bingos["col" + i]) {
 				if($(".col" + i + ".tb").length === $(".col" + i + ".tb.checked").length) {
 					getText();
-					$('.result').html("I got Apple bingo: " + theResult);
+					$('.result').html("Got #applebingo! " + theResult);
 					var constructTweet = "https://twitter.com/intent/tweet?text=" + "Apple Bingo! " + theResult + " " + "http://owenwillia.ms/applebingo";
 					$('#link').attr('href', constructTweet)
 					$('#myModal').modal({show:true});
@@ -175,7 +178,7 @@
 			if(!bingos["diag" + i]) {
 				if($(".diag" + i + ".tb").length === $(".diag" + i + ".tb.checked").length) {
 					getText();
-					$('.result').html("I got Apple bingo: " + theResult);
+					$('.result').html("Got #applebingo! " + theResult);
 					var constructTweet = "https://twitter.com/intent/tweet?text=" + "Apple Bingo! " + theResult + "http://owenwillia.ms/applebingo";
 					$('#link').attr('href', constructTweet)
 					$('#myModal').modal({show:true});
