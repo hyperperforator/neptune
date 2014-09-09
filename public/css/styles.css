@@ -243,8 +243,6 @@ section {
   padding: 15px;
   text-align: center;
   display: none; }
-.appleevent .tb:hover {
-  background: grey; }
 .appleevent .holder {
   text-align: center;
   margin-top: 60px; }
