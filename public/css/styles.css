@@ -246,8 +246,6 @@ section {
 .appleevent .holder {
   text-align: center;
   margin-top: 60px; }
-.appleevent .holder img {
-  width: 35%; }
 .appleevent #main {
   background: #fff url("/img/invite.jpg") center top no-repeat;
   background-size: auto 100%;
