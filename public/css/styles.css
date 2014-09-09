@@ -286,6 +286,9 @@ section {
   padding-top: 20px; }
 .appleevent .tables {
   margin-top: 40px; }
+@media only screen and (max-width: 480px) {
+  .appleevent .col-xs-2 {
+    width: 20%; } }
 
 @font-face {
   font-family: 'icomoon';
