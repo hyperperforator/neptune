@@ -447,6 +447,11 @@ div[class*='col-']  {
 .tables {
 	margin-top: 40px;
 }
+
+@media only screen and (max-width : 480px) {
+	.col-xs-2 {
+		width: 20%;
+	}
 }
 
 
