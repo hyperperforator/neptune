@@ -377,6 +377,7 @@ section {
 	border: 1px solid black;
 	padding: 15px;
 	text-align: center;
+	display: none;
 }
 
 .tb:hover {
@@ -422,6 +423,17 @@ h2 {
 	font-weight:300;
 	font-size: 1.2em;
 }
+
+.checked {
+	background: #0BD318;
+	color: white;
+	-webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
 }
 
 

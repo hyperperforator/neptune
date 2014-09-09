@@ -99,13 +99,11 @@
     for(var i = 0; i < shuffledWords.length; i++) {
     	$("#x" + i).html(shuffledWords[i]);
 	}
+	$( ".tb" ).show();
 	});
  
 	$( ".tb" ).click(function() {
-  		$(this).css( "background-color", "#0BD318");
-  		$(this).css( "opacity", "0.9");
-  		$(this).css( "color", "white");
-  		$(this).addClass("checked");
+  		$(this).toggleClass( "checked");
   		checkBingo();
 	});
 	var bingos = {
