@@ -271,6 +271,8 @@ section {
 .appleevent h2 {
   font-weight: 300;
   font-size: 1.2em; }
+.appleevent .center {
+  text-align: center; }
 .appleevent .checked {
   background: #0BD318;
   color: white;
@@ -279,6 +281,11 @@ section {
   -o-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear; }
+.appleevent div[class*='col-'] {
+  height: 60px;
+  padding-top: 20px; }
+.appleevent .tables {
+  margin-top: 40px; }
 
 @font-face {
   font-family: 'icomoon';

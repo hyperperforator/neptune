@@ -425,6 +425,10 @@ h2 {
 	font-size: 1.2em;
 }
 
+.center {
+	text-align: center;
+}
+
 .checked {
 	background: #0BD318;
 	color: white;
@@ -435,6 +439,14 @@ h2 {
     transition: background-color 500ms linear;
 }
 
+div[class*='col-']  {
+	height: 60px;
+	padding-top: 20px;
+}
+
+.tables {
+	margin-top: 40px;
+}
 }
 
 
