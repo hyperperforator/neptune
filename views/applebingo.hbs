@@ -140,7 +140,7 @@
 
 		if($(".tb").length === $(".tb.checked").length) {
 			getText();
-					$('.result').html("Got #applebingo: " + theResult);
+					$('.result').html("Got Apple Bingo! " + theResult);
 					var constructTweet = "https://twitter.com/intent/tweet?text=" + "Got #applebingo! " + theResult + "http://owenwillia.ms/applebingo";
 					$('#link').attr('href', constructTweet)
 					$('#myModal').modal({show:true});
@@ -151,7 +151,7 @@
 			if(!bingos["row" + i]) {
 				if($(".row" + i + " .tb").length === $(".row" + i + " .tb.checked").length) {
 					getText();
-					$('.result').html("Got #applebingo! " + theResult);
+					$('.result').html("I got Apple Bingo! " + theResult);
 					var constructTweet = "https://twitter.com/intent/tweet?text=" + "Got #applebingo! " + theResult + "http://owenwillia.ms/applebingo";
 					$('#link').attr('href', constructTweet)
 					$('#myModal').modal({show:true});
@@ -165,7 +165,7 @@
 			if(!bingos["col" + i]) {
 				if($(".col" + i + ".tb").length === $(".col" + i + ".tb.checked").length) {
 					getText();
-					$('.result').html("Got #applebingo! " + theResult);
+					$('.result').html("I got Apple Bingo! " + theResult);
 					var constructTweet = "https://twitter.com/intent/tweet?text=" + "Apple Bingo! " + theResult + " " + "http://owenwillia.ms/applebingo";
 					$('#link').attr('href', constructTweet)
 					$('#myModal').modal({show:true});
@@ -178,7 +178,7 @@
 			if(!bingos["diag" + i]) {
 				if($(".diag" + i + ".tb").length === $(".diag" + i + ".tb.checked").length) {
 					getText();
-					$('.result').html("Got #applebingo! " + theResult);
+					$('.result').html("I got Apple Bingo! " + theResult);
 					var constructTweet = "https://twitter.com/intent/tweet?text=" + "Apple Bingo! " + theResult + "http://owenwillia.ms/applebingo";
 					$('#link').attr('href', constructTweet)
 					$('#myModal').modal({show:true});
