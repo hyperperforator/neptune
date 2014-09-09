@@ -140,7 +140,7 @@
 
 		if($(".tb").length === $(".tb.checked").length) {
 			getText();
-					$('.result').html("I got Apple bingo: " + theResult);
+					$('.result').html("Got #applebingo: " + theResult);
 					var constructTweet = "https://twitter.com/intent/tweet?text=" + "Got #applebingo! " + theResult + "http://owenwillia.ms/applebingo";
 					$('#link').attr('href', constructTweet)
 					$('#myModal').modal({show:true});
