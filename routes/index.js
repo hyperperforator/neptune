@@ -77,6 +77,13 @@ indexRouter.route('/newsletter')
 			    });
   });
 
+      indexRouter.route('/newsletter/win')
+  .all(function (req, res) {
+    res.render('win', {
+            title: 'Charged Newsletter | WIN a free watch'
+          });
+  });
+
 
 exports.indexRouter = indexRouter;
   // Each article has the following properties:

@@ -177,6 +177,33 @@ section {
 	  background: url('./img/bg.png') repeat;
 	}
 
+	.win {
+		.formcontainer {
+			background-color: white !important;
+			color: black !important;
+		}
+
+		a { 
+			color: black !important; 
+			border-bottom: 1px dotted black !important;
+		}
+
+#gotit {
+width: 100%;
+	}
+
+	.blurb p {
+	color: black;
+	}
+
+	h1 {
+		color: #D02027 !important;
+	}
+
+	.form-control {
+		border: 1px solid #D02027 !important;
+	}
+}
 .newsletter {
 	.formcontainer {
 	  background-color: #D02027;
@@ -217,7 +244,7 @@ section {
 	.form-control {
 	  border-radius: 0;
 	  outline: none;
-	  border:none !important;
+	  border:none;
 	  box-shadow:none !important;
 	  width: 300px;
 	  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -447,6 +474,7 @@ div[class*='col-']  {
 .tables {
 	margin-top: 40px;
 }
+
 
 @media only screen and (max-width : 480px) {
 	.col-xs-2 {

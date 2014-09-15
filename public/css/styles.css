@@ -116,6 +116,21 @@ section {
 .page {
   background: url('./img/bg.png') repeat; }
 
+.win .formcontainer {
+  background-color: white !important;
+  color: black !important; }
+.win a {
+  color: black !important;
+  border-bottom: 1px dotted black !important; }
+.win #gotit {
+  width: 100%; }
+.win .blurb p {
+  color: black; }
+.win h1 {
+  color: #D02027 !important; }
+.win .form-control {
+  border: 1px solid #D02027 !important; }
+
 .newsletter .formcontainer {
   background-color: #D02027;
   padding: 20px 20px 20px 20px; }
@@ -142,7 +157,7 @@ section {
 .newsletter .form-control {
   border-radius: 0;
   outline: none;
-  border: none !important;
+  border: none;
   box-shadow: none !important;
   width: 300px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
