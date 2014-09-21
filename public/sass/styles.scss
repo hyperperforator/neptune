@@ -8,23 +8,93 @@ section {
 }
 
 .index {
+
+	.bg {
+	  height: 300px;
+
+	    &:before {
+    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom right,#45ADA8,#547980);
+		opacity: .3; 
+  }
+
+	  h2 {
+	  	color: white;
+	  	position: absolute;
+	  	bottom: 0px;
+	  	font-family: "grad";
+		font-style: normal;
+	  }
+	}
+
+	.sonos {
+		background: url(../img/sonos.jpg) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.icloud {
+		background: url(../img/icloud.png) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.tracks {
+		background: url(../img/8tracks.jpg) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.moto {
+		background: url(../img/moto.jpg) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.twttr {
+		background: url(../img/twitter.jpg) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.phones {
+		background: url(../img/phones.jpg) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.galaxy {
+		background: url(../img/s5.jpg) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.titans {
+		background: url(../img/titanfall.png) no-repeat center center; 
+		background-size: cover;
+	}
+
+	.mac {
+		background: url(../img/mac.jpg) no-repeat center center; 
+		background-size: cover;
+	}
+
+
 	h1, h2, h3, h4 {
-		font-family: "Harriet Display Medium";
-		font-style: italic;
+		font-family: "Proxima Nova";
+		font-style: normal;
 		font-weight: normal;
 	}
 
 	p {
-		font-family: "Harriet Display Medium";
+		font-family: "grad";
 		font-style: normal;
-		font-weight: normal;
+		font-weight: 600;
 		color: white;
 	}
 
 	h1 {
-		font-family: "Harriet Display Medium";
-	  font-style: italic;
-	  font-weight: normal;
+		font-family: "Proxima Nova";
+	  font-style: normal;
+	  font-weight: 100;
 	  -webkit-font-smoothing: antialiased;
 	  font-size: 4em;
 	  color: white;
@@ -54,7 +124,7 @@ section {
 
 	a {
 		font-family: "Harriet Display Medium";
-		font-style: italic;
+		font-style: normal;
 		border-bottom: 2px solid #F7EE0C;
 		color: white;
 		padding-left: 4px;
@@ -116,13 +186,14 @@ section {
 	  	margin-bottom: 40px;
 
 	  	a {
-			font-family: "Harriet Display Medium";
+			font-family: "grad";
 			font-style: italic;
 			border-bottom: 2px solid #F7EE0C;
 			color: black;
 			padding-left: 4px;
 			padding-right: 4px;
 			text-decoration: none;
+			font-weight:300;
 		}
 
 		a:hover {
@@ -132,7 +203,7 @@ section {
 
 	  	h1, h2 {
 	  		color: black;
-	  		font-style: italic;
+	  		font-style: normal;
 	  	}
 	  	h3 {
 	  		color: black;
@@ -171,6 +242,16 @@ section {
 		.makeitrain {
 			font-size: 1.1em;
 		}
+	}
+}
+
+.broken {
+	a {
+		padding: 0px;
+	}
+
+	a:hover {
+		
 	}
 }
 	.page {

@@ -5,19 +5,63 @@ section {
   height: 100%;
   width: 100%; }
 
+.index .bg {
+  height: 300px; }
+  .index .bg:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #45ADA8, #547980);
+    opacity: 0.3; }
+  .index .bg h2 {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    font-family: "grad";
+    font-style: normal; }
+.index .sonos {
+  background: url(../img/sonos.jpg) no-repeat center center;
+  background-size: cover; }
+.index .icloud {
+  background: url(../img/icloud.png) no-repeat center center;
+  background-size: cover; }
+.index .tracks {
+  background: url(../img/8tracks.jpg) no-repeat center center;
+  background-size: cover; }
+.index .moto {
+  background: url(../img/moto.jpg) no-repeat center center;
+  background-size: cover; }
+.index .twttr {
+  background: url(../img/twitter.jpg) no-repeat center center;
+  background-size: cover; }
+.index .phones {
+  background: url(../img/phones.jpg) no-repeat center center;
+  background-size: cover; }
+.index .galaxy {
+  background: url(../img/s5.jpg) no-repeat center center;
+  background-size: cover; }
+.index .titans {
+  background: url(../img/titanfall.png) no-repeat center center;
+  background-size: cover; }
+.index .mac {
+  background: url(../img/mac.jpg) no-repeat center center;
+  background-size: cover; }
 .index h1, .index h2, .index h3, .index h4 {
-  font-family: "Harriet Display Medium";
-  font-style: italic;
+  font-family: "Proxima Nova";
+  font-style: normal;
   font-weight: normal; }
 .index p {
-  font-family: "Harriet Display Medium";
+  font-family: "grad";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   color: white; }
 .index h1 {
-  font-family: "Harriet Display Medium";
-  font-style: italic;
-  font-weight: normal;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 100;
   -webkit-font-smoothing: antialiased;
   font-size: 4em;
   color: white; }
@@ -35,7 +79,7 @@ section {
   text-align: center; }
 .index a {
   font-family: "Harriet Display Medium";
-  font-style: italic;
+  font-style: normal;
   border-bottom: 2px solid #F7EE0C;
   color: white;
   padding-left: 4px;
@@ -78,19 +122,20 @@ section {
   height: auto;
   margin-bottom: 40px; }
   .index .articles a {
-    font-family: "Harriet Display Medium";
+    font-family: "grad";
     font-style: italic;
     border-bottom: 2px solid #F7EE0C;
     color: black;
     padding-left: 4px;
     padding-right: 4px;
-    text-decoration: none; }
+    text-decoration: none;
+    font-weight: 300; }
   .index .articles a:hover {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.8); }
   .index .articles h1, .index .articles h2 {
     color: black;
-    font-style: italic; }
+    font-style: normal; }
   .index .articles h3 {
     color: black;
     font-size: 1.2em; }
@@ -112,6 +157,9 @@ section {
     font-size: 1.5em; }
   .index .makeitrain {
     font-size: 1.1em; } }
+
+.broken a {
+  padding: 0px; }
 
 .page {
   background: url('./img/bg.png') repeat; }
