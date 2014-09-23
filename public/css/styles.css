@@ -160,6 +160,8 @@ section {
 
 .broken a {
   padding: 0px; }
+.broken a:hover .bg:before {
+  background-image: linear-gradient(to bottom right, #45AAAA, #45ADA8); }
 
 .page {
   background: url('./img/bg.png') repeat; }

@@ -8,9 +8,10 @@ section {
 }
 
 .index {
-
+	
 	.bg {
 	  height: 300px;
+
 
 	    &:before {
     content: '';
@@ -251,7 +252,13 @@ section {
 	}
 
 	a:hover {
-		
+		.bg {
+		  	&:before {
+
+				background-image: linear-gradient(to bottom right,#45AAAA,#45ADA8);
+
+  			}	  
+		}
 	}
 }
 	.page {
