@@ -4,5 +4,5 @@
 # server in each group is considered to be the first
 # unless any hosts have the primary property set.
 # Don't declare `role :all`, it's a meta role
-role :web, %w{root@162.243.144.18}
+role :web, %w{root@188.166.118.103}
 
